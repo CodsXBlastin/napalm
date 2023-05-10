@@ -1,0 +1,98 @@
+body {
+  background-color: rgba(20, 20, 30, 1);
+  overflow-x: hidden;
+}
+
+ul.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.navigation li a {
+  font-size: 25px;
+  color: white;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    -180deg,
+    rgba(20, 20, 30, 0.55) 0%,
+    rgba(20, 20, 100, 0.55) 18%,
+    rgba(20, 20, 100, 0.55) 32%,
+    rgba(20, 20, 30, 1) 85%
+  );
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.header .overlay {
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 150vh;
+}
+
+.fullscreen {
+  height: 100vh;
+  width: 100vw;
+}
+
+.top-panel {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 15px 30px;
+  z-index: 9999;
+}
+
+.center-text {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  position: relative;
+  z-index: 999;
+  top: -30px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.navigation li a {
+  display: block;
+  padding: 15px;
+}
