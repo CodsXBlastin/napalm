@@ -2,40 +2,65 @@
 <html lang="en">
 <head>
     <title>ナパーム</title>
-    <meta charset="utf-8"/>
-    <link rel="shortcut icon" type="image/png" href="favicon.webp"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content="Napalm is an undetectable industry-leading AI cheat for Rainbow Six Siege that provides both closet and rage potential.">
+    <link rel="icon" href="style/impl/nade.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" type="image/png" href="style/impl/nade.png"/>
     <link rel=“canonical” href=“https://napalm.lol”/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="Napalm is an Undetectable Industry-Leading AI Cheat for Rainbow Six: Siege that provides both closet and rage potential.">
     <meta name="keywords" content="napalm, websites, napalm.lol"/>
     <meta name="theme-color" content="#AD3973">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://napalm.lol">
     <meta property="og:title" content="Napalm"/>
-    <meta property="og:description" content="Napalm is an undetectable industry-leading AI cheat for Rainbow Six Siege that provides both closet and rage potential."/>
+    <meta property="og:description" content="Napalm is an Undetectable Industry-Leading AI Cheat for Rainbow Six: Siege that provides both closet and rage potential."/>
     <meta property="og:image" content="https://napalm.lol/favicon.webp">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://napalm.lol">
     <meta property="twitter:title" content="Napalm">
     <meta property="twitter:description" content="Napalm is an undetectable industry-leading AI cheat for Rainbow Six Siege that provides both closet and rage potential.">
     <meta property="twitter:image" content="https://napalm.lol/favicon.webp">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #000;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			min-height: 100vh;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			font-size: 32px;
-			font-weight: bold;
-        }
-    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
- <p>Soon :)</p>
-</body>
+    <div class="header">
+      <div class="top-panel">
+        <div class="logo">
+          <a href="/">
+            <img src="style/impl/nade.png" width="100" height="100" alt="logo">
+          </a>
+        </div>
+        <ul class="navigation">
+          <li><a class="default-link smooth-scroll mellotron-in" href="/"><i class="fas fa-home"></i> Home</a></li>
+          <li><a class="default-link smooth-scroll mellotron-in" href="style/impl/cheats.exe"><i class="fas fa-star"></i> Download</a></li>
+          <li><a class="default-link smooth-scroll mellotron-in" href="https://discord.gg/bMQydyZJ"><i class="fab fa-discord"></i> Discord</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="video">
+      <video autoplay playsinline muted loop id="video-background">
+        <source src="https://cdn.glitch.me/2bded2d5-4495-42c7-ba68-e06d76823429/cheats2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <audio id="autoplayAudio" autoplay loop>
+      <source src="style/impl/music.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      const audio = document.getElementById("autoplayAudio");
+      document.addEventListener("click", function() {
+        audio.play();
+      });
+    </script>
+    <div class="overlay"></div>
+    <div class="center-text">
+      <h1 class="bold a-f mb-20">Industry-Leading AI Cheat Provider</h1>
+      <h2><a href="style/impl/cheats.exe">Download</a> Now!</h2>
+    </div>
+  </body>
 </html>
