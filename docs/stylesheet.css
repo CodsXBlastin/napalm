@@ -96,3 +96,14 @@ ul.navigation li a {
   display: block;
   padding: 15px;
 }
+
+.grenade {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grenade p {
+  font-size: 2px;
+  color: #333;
+  font-weight: bold;
+}
